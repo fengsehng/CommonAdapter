@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+    <!--android:focusable="false"-->
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#888"
+        android:text="android新技能"
+        android:textSize="16sp"
+        />
+   <TextView
+       android:id="@+id/desc"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="打造万能的adapter和Viewholder"
+       android:minLines="1"
+       android:maxLines="2"
+       android:layout_toLeftOf="@id/checkbox"
+       android:layout_below="@id/title"
+       android:layout_marginTop="10dp"
+       android:textColor="#444"
+       android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="201304"
+        android:layout_below="@id/desc"
+        android:layout_marginTop="10dp"
+        android:textColor="#444"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10086"
+        android:layout_below="@id/time"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_action_phone_start"
+        android:drawablePadding="5dp"
+        android:padding="3dp"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:background="#ff2447ff"/>
+
+
+</RelativeLayout>
